@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9f43" />
+      <stop offset="100%" stop-color="#ff7e5f" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b09b" />
+      <stop offset="100%" stop-color="#96c93d" />
+    </linearGradient>
+    
+    <!-- Filter for drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" opacity="0.6" />
+  
+  <!-- Growth Chart -->
+  <rect x="40" y="60" width="120" height="80" rx="5" fill="#fff" filter="url(#shadow)">
+    <animate attributeName="y" values="60;63;60" dur="5s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Chart Grid Lines -->
+  <line x1="40" y1="100" x2="160" y2="100" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,5">
+    <animate attributeName="y1" values="100;103;100" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="100;103;100" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="40" y1="80" x2="160" y2="80" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,5">
+    <animate attributeName="y1" values="80;83;80" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="80;83;80" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="40" y1="120" x2="160" y2="120" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,5">
+    <animate attributeName="y1" values="120;123;120" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="120;123;120" dur="5s" repeatCount="indefinite" />
+  </line>
+  
+  <!-- Chart Axes -->
+  <line x1="40" y1="60" x2="40" y2="140" stroke="#333" stroke-width="2">
+    <animate attributeName="y1" values="60;63;60" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="140;143;140" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="40" y1="140" x2="160" y2="140" stroke="#333" stroke-width="2">
+    <animate attributeName="y1" values="140;143;140" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="140;143;140" dur="5s" repeatCount="indefinite" />
+  </line>
+  
+  <!-- Growth Line with Animation -->
+  <path d="M50,130 L70,120 L90,110 L110,90 L130,70 L150,60" stroke="url(#orangeGradient)" stroke-width="3" fill="none">
+    <animate attributeName="d" values="M50,130 L70,120 L90,110 L110,90 L130,70 L150,60;M50,133 L70,123 L90,113 L110,93 L130,73 L150,63;M50,130 L70,120 L90,110 L110,90 L130,70 L150,60" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="3s" begin="0.5s" fill="freeze" />
+  </path>
+  
+  <!-- Data Points -->
+  <circle cx="50" cy="130" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="130;133;130" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="0.5s" fill="freeze" />
+  </circle>
+  <circle cx="70" cy="120" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="120;123;120" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="1s" fill="freeze" />
+  </circle>
+  <circle cx="90" cy="110" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="110;113;110" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="1.5s" fill="freeze" />
+  </circle>
+  <circle cx="110" cy="90" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="90;93;90" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="2s" fill="freeze" />
+  </circle>
+  <circle cx="130" cy="70" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="70;73;70" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="2.5s" fill="freeze" />
+  </circle>
+  <circle cx="150" cy="60" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="cy" values="60;63;60" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="0;5" dur="0.5s" begin="3s" fill="freeze" />
+  </circle>
+  
+  <!-- SEO Symbol -->
+  <circle cx="40" cy="40" r="15" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="r" values="15;17;15" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <text x="40" y="45" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10" font-weight="bold">SEO</text>
+  
+  <!-- Social Media Icons -->
+  <rect x="70" y="30" width="15" height="15" rx="3" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="width" values="15;17;15" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="height" values="15;17;15" dur="3s" repeatCount="indefinite" />
+  </rect>
+  <circle cx="100" cy="37" r="8" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="r" values="8;9;8" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+  <rect x="115" y="30" width="15" height="15" rx="3" fill="url(#orangeGradient)" opacity="0.8">
+    <animate attributeName="width" values="15;17;15" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="height" values="15;17;15" dur="4s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Email Marketing Symbol -->
+  <rect x="140" y="30" width="20" height="15" rx="2" fill="url(#greenGradient)" opacity="0.8">
+    <animate attributeName="width" values="20;22;20" dur="3.2s" repeatCount="indefinite" />
+    <animate attributeName="height" values="15;17;15" dur="3.2s" repeatCount="indefinite" />
+  </rect>
+  <path d="M140,30 L150,38 L160,30" stroke="#fff" stroke-width="1" fill="none">
+    <animate attributeName="d" values="M140,30 L150,38 L160,30;M140,32 L150,40 L160,32;M140,30 L150,38 L160,30" dur="3.2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Target/Audience Symbol -->
+  <circle cx="40" cy="170" r="15" stroke="url(#orangeGradient)" stroke-width="2" fill="none">
+    <animate attributeName="r" values="15;17;15" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="40" cy="170" r="10" stroke="url(#orangeGradient)" stroke-width="2" fill="none">
+    <animate attributeName="r" values="10;12;10" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="40" cy="170" r="5" fill="url(#orangeGradient)">
+    <animate attributeName="r" values="5;6;5" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Content Marketing Symbol -->
+  <rect x="70" y="160" width="20" height="25" rx="2" fill="#fff" stroke="url(#blueGradient)" stroke-width="2">
+    <animate attributeName="height" values="25;27;25" dur="3.5s" repeatCount="indefinite" />
+  </rect>
+  <line x1="75" y1="165" x2="85" y2="165" stroke="url(#blueGradient)" stroke-width="2">
+    <animate attributeName="y1" values="165;167;165" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="165;167;165" dur="3.5s" repeatCount="indefinite" />
+  </line>
+  <line x1="75" y1="170" x2="85" y2="170" stroke="url(#blueGradient)" stroke-width="2">
+    <animate attributeName="y1" values="170;172;170" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="170;172;170" dur="3.5s" repeatCount="indefinite" />
+  </line>
+  <line x1="75" y1="175" x2="85" y2="175" stroke="url(#blueGradient)" stroke-width="2">
+    <animate attributeName="y1" values="175;177;175" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="175;177;175" dur="3.5s" repeatCount="indefinite" />
+  </line>
+  
+  <!-- Analytics Symbol -->
+  <rect x="100" y="155" width="30" height="30" rx="3" fill="#fff" stroke="url(#purpleGradient)" stroke-width="2">
+    <animate attributeName="height" values="30;32;30" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <path d="M105,175 L110,165 L115,170 L120,160 L125,155" stroke="url(#purpleGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M105,175 L110,165 L115,170 L120,160 L125,155;M105,177 L110,167 L115,172 L120,162 L125,157;M105,175 L110,165 L115,170 L120,160 L125,155" dur="4s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Conversion Symbol -->
+  <path d="M150,155 L160,165 L170,155 L160,175 Z" fill="url(#greenGradient)" opacity="0.8">
+    <animate attributeName="d" values="M150,155 L160,165 L170,155 L160,175 Z;M150,157 L160,167 L170,157 L160,177 Z;M150,155 L160,165 L170,155 L160,175 Z" dur="3s" repeatCount="indefinite" />
+  </path>
+</svg>

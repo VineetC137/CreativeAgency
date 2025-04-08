@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#20c997" />
+      <stop offset="100%" stop-color="#0ca678" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="grayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#adb5bd" />
+      <stop offset="100%" stop-color="#868e96" />
+    </linearGradient>
+    
+    <!-- Filter for drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    
+    <!-- Server Blinking Lights -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" opacity="0.6" />
+  
+  <!-- Server Rack -->
+  <rect x="60" y="40" width="80" height="120" rx="5" fill="#333" filter="url(#shadow)">
+    <animate attributeName="y" values="40;43;40" dur="6s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Server Units -->
+  <rect x="65" y="50" width="70" height="20" rx="2" fill="#444">
+    <animate attributeName="y" values="50;53;50" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <rect x="70" y="55" width="5" height="5" rx="1" fill="url(#tealGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="55;58;55" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#tealGradient);#fff;url(#tealGradient)" dur="1s" repeatCount="indefinite" />
+  </rect>
+  <rect x="80" y="55" width="5" height="5" rx="1" fill="url(#purpleGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="55;58;55" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#purpleGradient);#fff;url(#purpleGradient)" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="120" y="55" width="10" height="10" rx="1" fill="#666">
+    <animate attributeName="y" values="55;58;55" dur="6s" repeatCount="indefinite" />
+  </rect>
+  
+  <rect x="65" y="80" width="70" height="20" rx="2" fill="#444">
+    <animate attributeName="y" values="80;83;80" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <rect x="70" y="85" width="5" height="5" rx="1" fill="url(#blueGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="85;88;85" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#blueGradient);#fff;url(#blueGradient)" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="80" y="85" width="5" height="5" rx="1" fill="url(#tealGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="85;88;85" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#tealGradient);#fff;url(#tealGradient)" dur="1.2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="120" y="85" width="10" height="10" rx="1" fill="#666">
+    <animate attributeName="y" values="85;88;85" dur="6s" repeatCount="indefinite" />
+  </rect>
+  
+  <rect x="65" y="110" width="70" height="20" rx="2" fill="#444">
+    <animate attributeName="y" values="110;113;110" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <rect x="70" y="115" width="5" height="5" rx="1" fill="url(#purpleGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="115;118;115" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#purpleGradient);#fff;url(#purpleGradient)" dur="1.8s" repeatCount="indefinite" />
+  </rect>
+  <rect x="80" y="115" width="5" height="5" rx="1" fill="url(#blueGradient)" filter="url(#glow)">
+    <animate attributeName="y" values="115;118;115" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#blueGradient);#fff;url(#blueGradient)" dur="1.3s" repeatCount="indefinite" />
+  </rect>
+  <rect x="120" y="115" width="10" height="10" rx="1" fill="#666">
+    <animate attributeName="y" values="115;118;115" dur="6s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Server Cables -->
+  <path d="M60,60 C40,60 30,80 30,100" stroke="url(#blueGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M60,60 C40,60 30,80 30,100;M60,63 C40,63 30,83 30,103;M60,60 C40,60 30,80 30,100" dur="6s" repeatCount="indefinite" />
+  </path>
+  <path d="M60,90 C45,90 35,100 35,120" stroke="url(#purpleGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M60,90 C45,90 35,100 35,120;M60,93 C45,93 35,103 35,123;M60,90 C45,90 35,100 35,120" dur="6s" repeatCount="indefinite" />
+  </path>
+  <path d="M60,120 C50,120 40,130 40,140" stroke="url(#tealGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M60,120 C50,120 40,130 40,140;M60,123 C50,123 40,133 40,143;M60,120 C50,120 40,130 40,140" dur="6s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Cloud Symbol -->
+  <circle cx="150" cy="60" r="15" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="r" values="15;17;15" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="170" cy="60" r="12" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="r" values="12;14;12" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="160" cy="50" r="10" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="r" values="10;12;10" dur="4.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Data Transfer Symbols -->
+  <path d="M140,60 L160,60" stroke="url(#tealGradient)" stroke-width="2" stroke-dasharray="3,3">
+    <animate attributeName="stroke-dashoffset" values="0;12" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Maintenance Tools -->
+  <path d="M150,110 L160,100 L170,110 L160,120 Z" fill="url(#grayGradient)" opacity="0.8">
+    <animate attributeName="transform" type="rotate" from="0 160 110" to="20 160 110" dur="5s" repeatCount="indefinite" />
+  </path>
+  <rect x="155" y="120" width="10" height="30" rx="2" fill="url(#grayGradient)" opacity="0.8" transform="rotate(-30, 160, 120)">
+    <animate attributeName="transform" type="rotate" from="-30 160 120" to="-10 160 120" dur="5s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Connection Lines -->
+  <path d="M140,90 C150,100 160,90 170,100" stroke="url(#purpleGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="d" values="M140,90 C150,100 160,90 170,100;M140,93 C150,103 160,93 170,103;M140,90 C150,100 160,90 170,100" dur="6s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Database Symbol -->
+  <ellipse cx="30" cy="100" rx="15" ry="10" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="cy" values="100;103;100" dur="6s" repeatCount="indefinite" />
+  </ellipse>
+  <rect x="15" y="100" width="30" height="20" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="y" values="100;103;100" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <ellipse cx="30" cy="120" rx="15" ry="10" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="cy" values="120;123;120" dur="6s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Backup Symbol -->
+  <path d="M30,140 L40,150 L50,140" stroke="url(#tealGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M30,140 L40,150 L50,140;M30,143 L40,153 L50,143;M30,140 L40,150 L50,140" dur="6s" repeatCount="indefinite" />
+  </path>
+  <rect x="35" y="150" width="10" height="15" rx="2" fill="url(#tealGradient)" opacity="0.8">
+    <animate attributeName="y" values="150;153;150" dur="6s" repeatCount="indefinite" />
+  </rect>
+</svg>

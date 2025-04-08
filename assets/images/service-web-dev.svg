@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0e0" />
+      <stop offset="100%" stop-color="#f5f5f5" />
+    </linearGradient>
+    
+    <!-- Filter for drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    
+    <!-- Animation Definitions -->
+    <animate id="floatAnimation" attributeName="cy" from="100" to="105" dur="3s" repeatCount="indefinite" begin="0s" />
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" opacity="0.6" />
+  
+  <!-- Laptop Base -->
+  <rect x="40" y="90" width="120" height="80" rx="5" fill="#333" filter="url(#shadow)">
+    <animate attributeName="y" values="90;93;90" dur="4s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Laptop Screen -->
+  <rect x="45" y="45" width="110" height="70" rx="3" fill="#333" filter="url(#shadow)">
+    <animate attributeName="y" values="45;48;45" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <rect x="50" y="50" width="100" height="60" rx="2" fill="url(#screenGradient)">
+    <animate attributeName="y" values="50;53;50" dur="4s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Code Elements on Screen with Typing Animation -->
+  <rect x="60" y="60" width="80" height="5" rx="1" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="width" values="0;80" dur="1.5s" begin="0.5s" fill="freeze" />
+    <animate attributeName="y" values="60;63;60" dur="4s" repeatCount="indefinite" begin="1.5s" />
+  </rect>
+  <rect x="60" y="70" width="60" height="5" rx="1" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="width" values="0;60" dur="1.2s" begin="2s" fill="freeze" />
+    <animate attributeName="y" values="70;73;70" dur="4s" repeatCount="indefinite" begin="3.2s" />
+  </rect>
+  <rect x="60" y="80" width="70" height="5" rx="1" fill="url(#purpleGradient)" opacity="0.8">
+    <animate attributeName="width" values="0;70" dur="1.3s" begin="3.2s" fill="freeze" />
+    <animate attributeName="y" values="80;83;80" dur="4s" repeatCount="indefinite" begin="4.5s" />
+  </rect>
+  <rect x="60" y="90" width="50" height="5" rx="1" fill="url(#blueGradient)" opacity="0.8">
+    <animate attributeName="width" values="0;50" dur="1s" begin="4.5s" fill="freeze" />
+    <animate attributeName="y" values="90;93;90" dur="4s" repeatCount="indefinite" begin="5.5s" />
+  </rect>
+  
+  <!-- Connecting Lines/Web -->
+  <path d="M100,130 L130,150 L160,140" stroke="url(#purpleGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M100,130 L130,150 L160,140;M100,133 L130,153 L160,143;M100,130 L130,150 L160,140" dur="4s" repeatCount="indefinite" />
+  </path>
+  <path d="M100,130 L70,150 L40,140" stroke="url(#blueGradient)" stroke-width="2" fill="none">
+    <animate attributeName="d" values="M100,130 L70,150 L40,140;M100,133 L70,153 L40,143;M100,130 L70,150 L40,140" dur="4s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Connection Nodes -->
+  <circle cx="130" cy="150" r="5" fill="url(#purpleGradient)">
+    <animate attributeName="cy" values="150;153;150" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="r" values="5;6;5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="160" cy="140" r="5" fill="url(#purpleGradient)">
+    <animate attributeName="cy" values="140;143;140" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="r" values="5;6;5" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="70" cy="150" r="5" fill="url(#blueGradient)">
+    <animate attributeName="cy" values="150;153;150" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="r" values="5;6;5" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="40" cy="140" r="5" fill="url(#blueGradient)">
+    <animate attributeName="cy" values="140;143;140" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="r" values="5;6;5" dur="2.2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Abstract Code Elements -->
+  <path d="M20,110 C30,100 40,120 50,110" stroke="url(#purpleGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M20,110 C30,100 40,120 50,110;M20,113 C30,103 40,123 50,113;M20,110 C30,100 40,120 50,110" dur="5s" repeatCount="indefinite" />
+  </path>
+  <path d="M150,110 C160,100 170,120 180,110" stroke="url(#blueGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M150,110 C160,100 170,120 180,110;M150,113 C160,103 170,123 180,113;M150,110 C160,100 170,120 180,110" dur="6s" repeatCount="indefinite" />
+  </path>
+</svg>

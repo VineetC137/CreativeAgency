@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b" />
+      <stop offset="100%" stop-color="#ff8e8e" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    
+    <!-- Filter for drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" opacity="0.6" />
+  
+  <!-- Design Canvas/Artboard -->
+  <rect x="50" y="40" width="100" height="120" rx="5" fill="#fff" stroke="#e0e0e0" stroke-width="2" filter="url(#shadow)">
+    <animate attributeName="y" values="40;43;40" dur="5s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- UI Elements on Canvas -->
+  <!-- Header Bar -->
+  <rect x="50" y="40" width="100" height="20" rx="5" fill="url(#blueGradient)">
+    <animate attributeName="y" values="40;43;40" dur="5s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Content Elements -->
+  <rect x="60" y="70" width="80" height="10" rx="2" fill="#e0e0e0">
+    <animate attributeName="y" values="70;73;70" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="width" values="0;80" dur="1s" begin="0.5s" fill="freeze" />
+  </rect>
+  <rect x="60" y="90" width="60" height="10" rx="2" fill="#e0e0e0">
+    <animate attributeName="y" values="90;93;90" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="width" values="0;60" dur="0.8s" begin="1.5s" fill="freeze" />
+  </rect>
+  
+  <!-- Button -->
+  <rect x="60" y="110" width="40" height="15" rx="7.5" fill="url(#pinkGradient)">
+    <animate attributeName="y" values="110;113;110" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.3s" fill="freeze" />
+  </rect>
+  
+  <!-- Color Palette -->
+  <circle cx="30" cy="60" r="10" fill="url(#pinkGradient)">
+    <animate attributeName="r" values="0;10" dur="0.5s" begin="3s" fill="freeze" />
+    <animate attributeName="cy" values="60;63;60" dur="5s" repeatCount="indefinite" begin="3.5s" />
+  </circle>
+  <circle cx="30" cy="90" r="10" fill="url(#purpleGradient)">
+    <animate attributeName="r" values="0;10" dur="0.5s" begin="3.5s" fill="freeze" />
+    <animate attributeName="cy" values="90;93;90" dur="5s" repeatCount="indefinite" begin="4s" />
+  </circle>
+  <circle cx="30" cy="120" r="10" fill="url(#blueGradient)">
+    <animate attributeName="r" values="0;10" dur="0.5s" begin="4s" fill="freeze" />
+    <animate attributeName="cy" values="120;123;120" dur="5s" repeatCount="indefinite" begin="4.5s" />
+  </circle>
+  
+  <!-- Design Tools -->
+  <!-- Paintbrush -->
+  <path d="M170,50 L180,40 L182,42 L172,52 Z" fill="#333">
+    <animate attributeName="transform" type="rotate" from="0 170 50" to="10 170 50" dur="2s" repeatCount="indefinite" />
+  </path>
+  <rect x="170" y="50" width="2" height="25" rx="1" fill="#795548" transform="rotate(45, 171, 50)">
+    <animate attributeName="transform" type="rotate" from="45 171 50" to="55 171 50" dur="2s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Pen Tool -->
+  <path d="M160,100 L170,90 L172,92 L162,102 Z" fill="url(#purpleGradient)">
+    <animate attributeName="transform" type="rotate" from="0 160 100" to="-10 160 100" dur="3s" repeatCount="indefinite" />
+  </path>
+  <rect x="160" y="100" width="2" height="20" rx="1" fill="#333" transform="rotate(-45, 161, 100)">
+    <animate attributeName="transform" type="rotate" from="-45 161 100" to="-55 161 100" dur="3s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Wireframe Elements -->
+  <rect x="170" y="130" width="20" height="30" rx="2" stroke="url(#blueGradient)" stroke-width="2" fill="none">
+    <animate attributeName="y" values="130;133;130" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="stroke-dasharray" values="44;0;44" dur="3s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Connecting Lines (UX Flow) -->
+  <path d="M100,170 C120,180 140,160 160,170" stroke="url(#purpleGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <animate attributeName="d" values="M100,170 C120,180 140,160 160,170;M100,173 C120,183 140,163 160,173;M100,170 C120,180 140,160 160,170" dur="5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- User-centered Design Symbol -->
+  <circle cx="60" cy="170" r="15" stroke="url(#pinkGradient)" stroke-width="2" fill="none">
+    <animate attributeName="cy" values="170;173;170" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="r" values="15;17;15" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="60" cy="170" r="5" fill="url(#pinkGradient)">
+    <animate attributeName="cy" values="170;173;170" dur="5s" repeatCount="indefinite" />
+  </circle>
+</svg>

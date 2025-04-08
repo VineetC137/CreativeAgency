@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Phone Frame -->
+    <rect x="250" y="50" width="300" height="500" rx="20" fill="#ffffff" stroke="#2d3436" stroke-width="10"/>
+    
+    <!-- Status Bar -->
+    <rect x="270" y="70" width="260" height="30" rx="5" fill="#f5f6fa"/>
+    
+    <!-- Food Categories -->
+    <rect x="270" y="120" width="80" height="80" rx="10" fill="#ff7675"/>
+    <rect x="360" y="120" width="80" height="80" rx="10" fill="#74b9ff"/>
+    <rect x="450" y="120" width="80" height="80" rx="10" fill="#55efc4"/>
+    
+    <!-- Search Bar -->
+    <rect x="270" y="220" width="260" height="40" rx="20" fill="#f5f6fa"/>
+    
+    <!-- Food Items -->
+    <rect x="270" y="280" width="260" height="80" rx="10" fill="#fff" stroke="#dfe6e9" stroke-width="2"/>
+    <circle cx="310" cy="320" r="25" fill="#ffeaa7"/>
+    
+    <rect x="270" y="380" width="260" height="80" rx="10" fill="#fff" stroke="#dfe6e9" stroke-width="2"/>
+    <circle cx="310" cy="420" r="25" fill="#fab1a0"/>
+    
+    <!-- Bottom Navigation -->
+    <rect x="270" y="490" width="260" height="40" rx="20" fill="#f5f6fa"/>
+    <circle cx="310" cy="510" r="15" fill="#6c5ce7"/>
+    <circle cx="400" cy="510" r="15" fill="#a8a8a8"/>
+    <circle cx="490" cy="510" r="15" fill="#a8a8a8"/>
+</svg>
