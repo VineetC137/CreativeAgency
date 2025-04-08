@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with our creative agency for your web development, design, and digital marketing needs">
+    <title>Creative Agency | Contact Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in touch with our team for inquiries and collaborations</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info section-padding">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Vishwakarma Institute Of Information Technology<br>Pune, 411048</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>vineet.22311621@viit.ac.in<br>vineetunde165@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 9371739148<br>+91 9638520741</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9am - 5pm<br>Saturday: 10am - 2pm<br>Sunday Holiday</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form and Map Section -->
+        <section class="contact-section section-padding bg-light">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <div class="section-header">
+                            <h2 class="section-title">Send Us a Message</h2>
+                            <p class="section-subtitle">We'd love to hear from you</p>
+                        </div>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-alert" id="form-alert"></div>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                                <div class="error-message" id="name-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                                <div class="error-message" id="email-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                                <div class="error-message" id="subject-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                                <div class="error-message" id="message-error"></div>
+                            </div>
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to the <a href="#">Privacy Policy</a></label>
+                                <div class="error-message" id="privacy-error"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-map-container">
+                        <div class="section-header">
+                            <h2 class="section-title">Our Location</h2>
+                            <p class="section-subtitle">Find us on the map</p>
+                        </div>
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215266754809!2d-73.98776548459448!3d40.75798794274431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1635784293219!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps location"></iframe>
+                        </div>
+                        <div class="social-connect">
+                            <h3>Connect With Us</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-mini section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Quick answers to common inquiries</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How quickly can you respond to inquiries?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We typically respond to all inquiries within 24-48 business hours. For urgent matters, we recommend calling our office directly.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you work with international clients?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we work with clients from around the world. Our team is experienced in managing remote collaborations and can accommodate different time zones for meetings and communications.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What information should I provide for a project quote?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To provide an accurate quote, it helps if you can share details about your project scope, timeline, specific requirements, and budget range. The more information you provide, the more precise our estimate will be.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section-padding bg-primary">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with our latest news, projects, and industry insights.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-light">Subscribe</button>
+                        </div>
+                        <p class="form-note">By subscribing, you agree to our <a href="#">Privacy Policy</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                    <p class="footer-tagline">Creating digital experiences that matter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-menu">
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">Mobile Development</a></li>
+                            <li><a href="services.html">Digital Marketing</a></li>
+                            <li><a href="services.html">Brand Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> Vishwakarma Institute Of Information Technology, Pune</li>
+                            <li><i class="fas fa-phone"></i> +91 9371739148</li>
+                            <li><i class="fas fa-envelope"></i>vineet.22311621@viit.ac.in</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Creative Agency. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+</body>
+</html>

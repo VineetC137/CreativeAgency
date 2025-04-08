@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative agency portfolio showcasing our services, projects, and expertise">
+    <title>Creative Agency | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">We Create Digital Experiences That Matter</h1>
+                    <p class="hero-subtitle">Transforming ideas into exceptional digital solutions with creativity and precision</p>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/hero-image.svg" alt="Creative digital solutions illustration" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Who We Are</h2>
+                    <p class="section-subtitle">A creative team passionate about digital excellence</p>
+                </div>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p>We are a forward-thinking creative agency specializing in web development, design, and digital marketing solutions. With a focus on innovation and user experience, we help businesses establish a strong online presence.</p>
+                        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                    </div>
+                    <div class="intro-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-text">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">80+</span>
+                            <span class="stat-text">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section class="services-overview section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive digital solutions for your business</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Custom websites and web applications built with the latest technologies.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">User-centered design that enhances user experience and engagement.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Mobile Development</h3>
+                        <p class="service-description">Native and cross-platform mobile applications for iOS and Android.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="services-cta">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Feedback from those who trusted us with their projects</p>
+                </div>
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Working with Creative Agency was a game-changer for our business. Their team delivered a website that exceeded our expectations and helped us increase our online conversions by 40%."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4 class="author-name">Sarah Johnson</h4>
+                                    <p class="author-position">CEO, TechStart Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The team's attention to detail and commitment to quality is impressive. They transformed our outdated website into a modern, user-friendly platform that our customers love."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4 class="author-name">Michael Brown</h4>
+                                    <p class="author-position">Marketing Director, Global Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Creative Agency's mobile app development services helped us reach a wider audience. Their expertise and innovative approach resulted in an app that our users find intuitive and engaging."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4 class="author-name">Emily Chen</h4>
+                                    <p class="author-position">Product Manager, InnovateTech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section-padding bg-primary">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-text">Let's collaborate to bring your vision to life with our expertise and creative solutions.</p>
+                    <a href="contact.html" class="btn btn-light">Contact Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                    <p class="footer-tagline">Creating digital experiences that matter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-menu">
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">Mobile Development</a></li>
+                            <li><a href="services.html">Digital Marketing</a></li>
+                            <li><a href="services.html">Brand Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> Vishwakarma Institute Of Information Technology, Pune</li>
+                            <li><i class="fas fa-phone"></i> +91 9371739148</li>
+                            <li><i class="fas fa-envelope"></i> vineet.22311621@viit.ac.in</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Creative Agency. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of web development, design, and digital marketing projects showcasing our expertise and creativity">
+    <title>Creative Agency | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Portfolio</h1>
+                <p class="page-subtitle">Showcasing our best work and creative solutions</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section class="portfolio section-padding">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-1.svg" alt="E-commerce Website for Fashion Brand">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>E-commerce Website</h3>
+                                    <p>Web Development</p>
+                                    <button class="portfolio-btn" data-id="1">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item" data-category="ui">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-2.svg" alt="Mobile Banking App UI Design">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Banking App UI</h3>
+                                    <p>UI/UX Design</p>
+                                    <button class="portfolio-btn" data-id="2">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-3.svg" alt="Fitness Tracking Mobile App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Fitness Tracker App</h3>
+                                    <p>Mobile Development</p>
+                                    <button class="portfolio-btn" data-id="3">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-4.svg" alt="Brand Identity for Coffee Shop">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Coffee Shop Branding</h3>
+                                    <p>Brand Identity</p>
+                                    <button class="portfolio-btn" data-id="4">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-5.svg" alt="Real Estate Property Listing Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Real Estate Platform</h3>
+                                    <p>Web Development</p>
+                                    <button class="portfolio-btn" data-id="5">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item" data-category="ui">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-6.svg" alt="Dashboard UI for Analytics Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Analytics Dashboard</h3>
+                                    <p>UI/UX Design</p>
+                                    <button class="portfolio-btn" data-id="6">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 7 -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-7.svg" alt="Food Delivery Mobile App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Food Delivery App</h3>
+                                    <p>Mobile Development</p>
+                                    <button class="portfolio-btn" data-id="7">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8 -->
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-8.svg" alt="Brand Identity for Tech Startup">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Tech Startup Branding</h3>
+                                    <p>Brand Identity</p>
+                                    <button class="portfolio-btn" data-id="8">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 9 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-img">
+                            <img src="assets/images/portfolio-9.svg" alt="Educational Learning Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Learning Platform</h3>
+                                    <p>Web Development</p>
+                                    <button class="portfolio-btn" data-id="9">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Modal -->
+        <div class="portfolio-modal" id="portfolio-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <!-- Modal content will be dynamically inserted here via JavaScript -->
+                </div>
+                <div class="modal-navigation">
+                    <button class="modal-prev" aria-label="Previous project"><i class="fas fa-chevron-left"></i></button>
+                    <button class="modal-next" aria-label="Next project"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta section-padding bg-primary">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-text">Let's collaborate to bring your vision to life with our expertise and creative solutions.</p>
+                    <a href="contact.html" class="btn btn-light">Contact Us Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Creative<span>Agency</span></a>
+                    <p class="footer-tagline">Creating digital experiences that matter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-menu">
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">Mobile Development</a></li>
+                            <li><a href="services.html">Digital Marketing</a></li>
+                            <li><a href="services.html">Brand Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Contact Us</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> Vishwakarma Institute Of Information Technology, Pune</li>
+                            <li><i class="fas fa-phone"></i> +91 9371739148</li>
+                            <li><i class="fas fa-envelope"></i> vineet.22311621@viit.ac.in</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Creative Agency. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/portfolio-filter.js"></script>
+</body>
+</html>
